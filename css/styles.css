@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #263238;
+}
+.brand-logo {
+  font-weight: 450;
+  letter-spacing: 0.1em;
+}
+.logo {
+  position: relative;
+  left: 3%;
+  bottom: 4%;
+}
+.menu-options {
+  position: relative;
+  right: 2%;
+}
+.texto-ayuda {
+  font-size: 14px;
+}
+.tarjetas-de-carros {
+  width: 100%;
+  height: 20%;
+}
+.card {
+  margin: 1%;
+}
+.container {
+  margin-top: 3%;
+}
+.row {
+  left: 0;
+  width: 100vw;
+}
+.contenedor {
+  left: 0;
+}
+.inactive {
+  display: none;
+}
+.active {
+  display: block;
+}
+.producto {
+  width: 900px;
+  height: 450px;
+  margin-bottom: 50px;
+}
+.info {
+  display: block;
+  margin-top: 10%;
+  width: 40%;
+  height: 100%;
+  background: red;
+  padding: 5%;
+}
+.info .precio {
+  position: relative;
+  font-size: 20px;
+  font-weight: 700;
+  bottom: -5%;
+}

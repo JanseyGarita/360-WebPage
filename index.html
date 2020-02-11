@@ -3,38 +3,168 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Compiled and minified CSS -->
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+
     <link rel="stylesheet" href="css/styles.css" />
     <title>360</title>
   </head>
   <body>
     <!-- Inicio del Nav-->
-    <div></div>
+    <div class="navbar-fixed">
+      <nav class="blue-grey darken-4">
+        <div class="nav-wrapper">
+          <div class="logo">
+            <a href="#" class="brand-logo">Tour Virtual</a>
+            <a href="#" data-target="side-menu" class="sidenav-trigger">
+              <i class="material-icons">menu</i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
     <!-- Fin del Nav-->
 
+    <div class="pinned">
+      <ul class="right table-of-contents">
+        <li class="options">
+          <a class="waves-effect waves-light white-text" href="#tour360"
+            >Tour</a
+          >
+        </li>
+        <li class="options">
+          <a class="waves-effect waves-light white-text" href="#productos360"
+            >Productos</a
+          >
+        </li>
+        <li class="options">
+          <a class="waves-effect waves-light white-text" href="#visualizador-productos"
+            >Productos</a
+          >
+        </li>
+      </ul>
+    </div>
 
-    
+    <!-- Inicio del Tour-->
+    <div class="container section">
+      <h4 class="center-align white-text scrollspy" id="tour360">
+        Instalaciones de la Empresa
+      </h4>
+      <h5 class="center-align grey-text lighten-2 texto-ayuda">
+        Seleccione el producto deseado
+      </h5>
+      <div class="tour">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione eius
+          at accusamus, a adipisci minima architecto suscipit sed quaerat
+          perspiciatis saepe natus totam, explicabo eos rerum harum beatae nam
+          est iste quisquam sequi voluptatum! Enim similique placeat iure ipsa
+          ut, facilis deserunt ipsam accusantium architecto aliquam cumque
+          quisquam eligendi animi neque, rem a delectus quod? Nihil quos
+          voluptatibus totam quam possimus temporibus harum corporis rerum
+          laborum aliquam. Sapiente placeat doloremque aut accusamus. Aliquam
+          obcaecati nemo velit hic animi, minus vitae commodi dolorem, iusto
+          fugit deleniti nihil eos impedit similique quam. Reiciendis ipsa
+          facere quibusdam ipsam voluptatum nisi expedita? Laboriosam,
+        </p>
+      </div>
+    </div>
+    <!-- Fin del Tour-->
+
+    <!-- Inicio de los productos-->
+    <div class="container">
+      <h4 class="center-align white-text scrollspy" id="productos360">
+        Visor 360°
+      </h4>
+      <h5 class="center-align grey-text lighten-2 texto-ayuda">
+        Seleccione el producto deseado
+      </h5>
+      <!-- Inicio tarjetas de productos -->
+      <div class="row">
+        <div class="card col l3">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/4/45/Toyota_PRIUS_A_Premium_%28DAA-ZVW51-AHXHB%29_front_trimmed.jpg"
+            />
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4"
+              >Producto 1</span
+            >
+            <button class="btn" id="1">Ver</button>
+          </div>
+        </div>
+
+        <div class="card col l3">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/4/45/Toyota_PRIUS_A_Premium_%28DAA-ZVW51-AHXHB%29_front_trimmed.jpg"
+            />
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4"
+              >Producto 2</span
+            >
+            <button class="btn" id="2">Ver</button>
+          </div>
+        </div>
+
+        <div class="card col l3">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/4/45/Toyota_PRIUS_A_Premium_%28DAA-ZVW51-AHXHB%29_front_trimmed.jpg"
+            />
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4"
+              >Producto 3</span
+            >
+            <button class="btn" id="3">Ver</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fin tarjetas de productos-->
+
+      <div class="contenedor">
+        <p class="scrollspy" id="visualizador-productos"></p>
+        <div id="producto1" class="producto active">
+          <div class="info">
+            <h4 class="white-text">Producto #1</h4>
+            <p class="white-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+              nobis deserunt tempora quia, officiis harum? Odit commodi facere
+              eligendi delectus at asperiores fuga, ad minus impedit
+              consequuntur aut quisquam vero velit sit iste repudiandae pariatur
+              eos praesentium provident quaerat consectetur porro neque cum?
+              Aspernatur, culpa velit qui itaque similique consequatur?
+            </p>
+            <p class="white-text precio">Precio: $40 000</p>
+          </div>
+        </div>
+        <div id="producto2" class="producto inactive">
+          <h4>Producto 2</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <div id="producto3" class="producto inactive">
+          <h4>Producto 3</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Fin de los productos-->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
+
     <script src="js/scripts.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </body>
 </html>
